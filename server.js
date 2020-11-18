@@ -21,6 +21,7 @@ const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout";
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useFindAndModify: false,
+  seCreateIndex: true,
   useUnifiedTopology: true,
 });
 
